@@ -6,7 +6,7 @@ interface FetchBooksResponse {
   total: number;
 }
 
-const API_URL = `https://mission13-eh-backend-h9a4dte5ekgzdke9.eastus2-01.azurewebsites.net/api/book`;
+const API_URL = `https://backend-emma-cscda5aff8hmhgce.westus2-01.azurewebsites.net/api/Book`;
 // const API_URL = `https://localhost:5000/api/book`;
 
 // Grab the books
