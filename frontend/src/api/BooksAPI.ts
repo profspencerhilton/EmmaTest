@@ -6,7 +6,7 @@ interface FetchBooksResponse {
   total: number;
 }
 
-const API_URL = `https://backend-emma-cscda5aff8hmhgce.westus2-01.azurewebsites.net/api/book`;
+const API_URL = `https://backend-emma-cscda5aff8hmhgce.westus2-01.azurewebsites.net/api/Book`;
 // const API_URL = `https://localhost:5000/api/book`;
 
 // Grab the books
@@ -21,7 +21,7 @@ export const fetchBooks = async (
       .join('&');
 
     const response = await fetch(
-      `${API_URL}/allbooks?pageSize=${pageSize}&pageNum=${pageNumber}${selectedCategories.length ? `&${categoryParams}` : ''}`
+      `${API_URL}/AllBooks?pageSize=${pageSize}&pageNum=${pageNumber}${selectedCategories.length ? `&${categoryParams}` : ''}`
     );
 
     if (!response.ok) {
