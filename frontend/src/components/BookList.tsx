@@ -19,7 +19,7 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
 
     const fetchBooks = async () => {
       const response = await fetch(
-        `https://localhost:5000/api/book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`,
+        `https://backend-emma-cscda5aff8hmhgce.westus2-01.azurewebsites.net/api/book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`,
         {
           // Pass the cookie
           credentials: 'include',
